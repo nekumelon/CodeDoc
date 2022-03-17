@@ -37,8 +37,9 @@ function getOpenAIChoice(response) {
  */
 async function generateDocumentationHeader(code) {
 	const maxTokens = config.get('max_tokens');
+	const useCodex = config.get('use_codex');
 
-    return await openai.createCompletion('text-davinci-002', {
+    return await openai.createCompletion(useCodex ? 'code-davinci-002' : 'text-davinci-002', {
 		prompt: `Create a jsdoc header for the following code:\n${code}`,
 		temperature: 0.7,
 		max_tokens: clamp(MAX_TOKENS - encode(code).length, 1, maxTokens),

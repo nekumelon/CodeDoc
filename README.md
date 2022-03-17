@@ -9,6 +9,9 @@ Once you have the `.vsix` file, click the extensions icon in vscode, the 3 dots 
 ### Authenticating
 To authenticate, you must have an OpenAI api key. You can generate one from `https://openai.com/api/`. Put the api key in CodeDocs settings.
 
+### Codex
+If you have access to the OpenAI Codex API and want to use it's superior code knowledge, you can select the Codex option in the CodeDoc settings. The only downside is that large code may take a little longer to process.
+
 ### Usage
 First make sure you are authenticated. See above details.
 To use CodeDoc, select the function you want to create documentation for and click the `Generate Documentation` icon on the bottom left of the vscode status bar (The icon looks like a document with a code symbol). If you are on a MacBook with a touchbar, you can click the document icon, also on the bottom left.

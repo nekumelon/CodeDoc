@@ -27,6 +27,11 @@
     "configuration": {
       "title": "codedoc",
       "properties": {
+        "codedoc.use_codex": {
+          "type": "boolean",
+          "default": false,
+          "description": "If you have Codex access, whether or not to use the Codex"
+        },
         "codedoc.api_key": {
           "type": "string",
           "default": null,
